@@ -12,21 +12,21 @@ while True:
     
     if (solve_for == "F"):
         print ("\nF = M * A")
-        mass = input("Enter Mass: ")
-        acceleration = input("Enter Acceleration: ")
-        force = float(mass)*float(acceleration)
+        mass = float(input("Enter Mass: "))
+        acceleration = float(input("Enter Acceleration: "))
+        force = mass*acceleration
         print("Force = ", force)
         
     elif(solve_for == "M"):
         print ("\nM = F / A")
-        force = input("Enter Force: ")
-        acceleration = input("Enter Acceleration: ")
-        mass = float(force)/float(acceleration)
+        force = float(input("Enter Force: "))
+        acceleration = float(input("Enter Acceleration: "))
+        mass = force/acceleration
         print("Mass = ", mass)
     
     elif (solve_for == "A"):
         print ("\nA = F / M")
-        force= input("Enter Force: ")
-        mass = input("Enter Mass: ")
-        acceleration = float(force) / float(mass)
+        force= float(input("Enter Force: "))
+        mass = float(input("Enter Mass: "))
+        acceleration = force / mass
         print("Acceleration = ", acceleration)
