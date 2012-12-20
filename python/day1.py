@@ -11,5 +11,5 @@ save_string = "your name is %s, you are %s years old, and your username is %s." 
 print(save_string)
 
 save_file = open('txt/day1.txt', 'a')
-save_file.write(save_string)
+save_file.write("%s\n" % save_string)
 save_file.close()
