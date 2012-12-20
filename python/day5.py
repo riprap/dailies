@@ -3,3 +3,9 @@ Your challenge for today is to create a program which is password protected, and
 For extra credit, have the user and password in a seperate .txt file.
 for even more extra credit, break into your own program :)
 """
+
+def get_userpass():
+	f = open('txt/day5.txt', 'r')
+	userpass = f.read()
+	f.close()
+	return userpass
