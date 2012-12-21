@@ -12,7 +12,6 @@ longer the better. For style, see if you can "train your monkey" by modifying
 either the random character generator or the word list to output text that's
 more Shakespearean in less time.
 """
-import time
 import random
 
 letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', ' ']
@@ -36,12 +35,15 @@ while word_count < 20:
     if random_letter ==  " ":
         for x in word_list:
             if x == word:
+                #prints if random word matches a word in the word list
                 print word
                 word_count+=1
+        #start new word
         word = ""
     else:
         #word is longer than the max word length, start a new word (saves time)
         if len(word)>max_word_length:
             word = ""
         else:
+            #concatenate letter to word
             word += random_letter
