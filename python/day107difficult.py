@@ -1,5 +1,5 @@
 """
-Given as input this list of 20,000 twelve-character strings[1] , which contains
+Given as input, this list of 20,000 twelve-character strings[1] , which contains
 10,000 actual English words, and 10,000 random strings of characters, write a
 program that filters out the English words, with no false positives or
 negatives. Your output must match this list exactly.[2]
@@ -13,4 +13,7 @@ That's fine, but the smaller the better.This is not a "code golf" challenge:
 don't worry about the exact character count of your programs. It's more about
 how elegant your solution is. But for reference, I have a python solution that
 reads in no data and is about 1700 bytes.
+[1] = http://pastebin.com/eJFn49vp
+[2] = http://pastebin.com/trMz6nWQ
 """
+
