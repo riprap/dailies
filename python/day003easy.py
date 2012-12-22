@@ -20,8 +20,8 @@ def crypt(user_string, caesar_shift):
 	return encrypted_string
 
 while True:
-	user_string = str(input("\nEnter a string to be ciphered: ")).lower()
-	shift_amount = int(input("Enter a shift amount for the cipher: "))
+	user_string = str(raw_input("\nEnter a string to be ciphered: ")).lower()
+	shift_amount = int(raw_input("Enter a shift amount for the cipher: "))
 	
 	#encrypt that shit homie
 	encrypted_string = crypt(user_string, shift_amount)

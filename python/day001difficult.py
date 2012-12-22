@@ -33,7 +33,7 @@ guess = False
 
 while guess == False:
     guess_number = next_guess(guesses, guesses_result)
-    user_input = raw_input("Is this your number%i"%guess_number)
+    user_input = raw_input("Is this your number(enter correct, higher, or lower: %i\n"%guess_number)
     user_input.lower()
     
     if user_input == "correct":
